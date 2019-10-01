@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PHP Basics 3 | Les fonctions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body class="pt-5 sw">
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="index.html"><i class="fab fa-php"></i> PHP BASICS</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#start">DEMARRAGE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#function">FONCTION</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#return">RETOUR</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parameter">PARAMETRE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#end">FIN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron d-flex align-items-center justify-content-center jumbotron-sw">
+        <h1 class="text-light"><i class="fab fa-lg fa-php"></i> BASICS </h1><h1 class="no-style">3</h1>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h2 class="pt-2" id="start"><i class="fas fa-play"></i> DEMARRAGE</h2>
+        <ol>
+            <li>Commence par regarder <a href="http://www.allocine.fr/film/fichefilm_gen_cfilm=57769.html" target="_blank">"Watchmen : Les gardiens"</a> si tu ne l'as pas vu.</li>
+            <li>Crée un nouveau projet dans PhpStorm.</li>
+            <li>Crée deux répertoires à la racine de ton projet. <i>src</i> et <i>public</i></li>
+            <li>Crée un fichier : <i>index.php</i> dans ton répertoire public.</li>
+            <li>Crée un fichier : <i>function.php</i> dans ton répertoire src.</li>
+            <li>Inclus ton fichier <i>function.php</i> dans <i>index.php</i>.</li>
+            <li>Démarre un serveur HTTP, sa racine doit être dans le répertoire <i>public</i>.</li>
+            <li>Fin</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="function"><i class="fas fa-cogs"></i> FONCTION</h2>
+        <ol>
+            <li>Crée une fonction nommée <strong>sayHello</strong> permettant d'écrire <strong>"Hello Nite Owl"</strong>.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="return"><i class="fas fa-arrow-alt-circle-left"></i> RETOUR</h2>
+
+        <p class="alert">Une fonction <strong>ne doit jamais</strong> (sauf cas rare) afficher directement quelque chose (echo, print_r, var_dump...).<br />
+            <strong>Une fonction doit retourner une valeur d'un type bien défini.</strong></p>
+
+        <p>En ré-utilisant notre fonction "sayHello()"</p>
+
+        <ol>
+            <li>Modifie la fonction pour qu'elle <strong>retourne "Hello Nite Owl"</strong> plutôt que de l'afficher directement.</li>
+            <li>Cette fonction ne doit pouvoir retourner que des chaînes.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="parameter"><i class="fas fa-question"></i> PARAMETRE</h2>
+
+        <p>Toujours à partir de notre fonction "sayHello()"</p>
+        <ol>
+            <li>Modifie la en lui ajoutant <strong>un paramètre nommé "name" de type string</strong></li>
+            <li>Modifie le retour de la fonction pour qu'elle retourne <strong>"Hello <em>{name}</em>"</strong></li>
+            <li>Rend le <strong>paramètre "name" optionnel</strong>. Si rien n'est précisé, ta fonction devra retourner "Hello Dr. Manhattan"</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="end"><i class="fas fa-stop"></i> FIN</h2>
+
+        <ol>
+            <li>Crée une nouvelle fonction nommée <b>"whoAmI"</b>, cette fonction retournera une chaîne (ou null).</li>
+            <li>Elle prendra deux paramètres : <b>name de type string</b> et <b>watchmen de type array</b>.
+                <br />watchmen contiendra la liste de tous les watchmen ('Dr. Manhattan', 'Ozymandias', 'Silk Spectre', 'Rorschach', 'The comedian', 'Nite Owl')</li>
+            <li><u>Algo :</u> Retourne <b>"<i>{name}</i> est un watchmen"</b> uniquement si <b><i>{name}</i></b> est un watchmen : <br />
+                Rien du tout si <b><i>{name}</i></b> n'en est pas un.</li>
+        </ol>
+        <em><a href="function_cheatsheet.html">Comment créer une fonction ?</a></em>
+    </section>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+</html>

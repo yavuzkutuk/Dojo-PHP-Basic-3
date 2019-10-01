@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round');
+
+
+@font-face {
+    font-family: watchmen;
+    src: url("font/--wATCHMEn--.ttf");
+}
+
+:root {
+    --wcs-color: #f99797;
+    --dark-color:#000000;
+    --secondary-color: #EC180A;
+    --sw-text: #FFE919;
+    --lotr-color:#f76c6c;
+    --watchmen-color: #ffe800;
+}
+
+body{
+    background: url("img/watchmen-wallpapers-30185-3821141.jpg") no-repeat black bottom right;
+    color: white;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+    font-family: watchmen, sans-serif;
+    font-weight: bold;
+}
+
+.navbar a{
+    color: var(--watchmen-color);;
+}
+
+a{
+    color: var(--watchmen-color);;
+}
+
+section {
+    font-size: 16pt;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid grey;
+    padding: 1em;
+}
+
+
+.row {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+h1 {
+    font-family: watchmen;
+    color: var(--watchmen-color);
+}
+
+h1.no-style {
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+.card-title,
+h2 {
+    color:var(--watchmen-color);
+    font-family: watchmen;
+}
+
+.lotr  .card-title,
+.lotr h1,
+.lotr h2 {
+    color:var(--secondary-color);
+    font-family: 'lotr', sans-serif;
+}
+
+.jumbotron {
+    background-image:url("img/851043.jpg");
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height:450px;
+    color: var(--secondary-color);
+}
+
+.card {
+    background-color:rgba(155, 0, 0, 0.4);
+    color: #CCC;
+}
+
+
+.card .card-title {
+    color: orange;
+}
+
+.card .btn-primary{
+    background-color: var(--dark-color);
+    color:orange;
+    border-color: var(--dark-color);
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+
+.alert {
+    color: var(--watchmen-color);
+    font-style: italic;
+}
